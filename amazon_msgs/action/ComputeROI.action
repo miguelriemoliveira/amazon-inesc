@@ -1,0 +1,13 @@
+#goal definition
+sensor_msgs/PointCloud2 point_cloud #point cloud 
+sensor_msgs/CameraInfo camera_info
+
+---
+#result definition
+uint8 SUCCEESS=0
+uint8 FAILURE=1
+uint32 result
+
+sensor_msgs/PointCloud2 segmented_point_cloud #point cloud 
+---
+#feedback

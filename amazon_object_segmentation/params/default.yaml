@@ -1,0 +1,16 @@
+#Transform from robot to shelf
+#
+
+#Shelf Bins definitions (always use the shelf frame_id)
+
+#BinSize: [ x  ,   y  ,   z  ]
+BinSize: [0.276, 0.240, 0.400]
+
+#BinPose: [x, y] Top left corner coordinates
+BinPose: [0.034, 0.032,0.31, 0.032,0.586, 0.032,0.034, 0.272,0.31, 0.272,0.586, 0.272,0.034, 0.512,0.31, 0.512,0.586, 0.512,0.034, 0.752,0.31, 0.752,0.586, 0.752]
+
+BinLabel: ["A","B","C", "D", "E","F","G", "H", "I","J","K", "L"]
+
+
+
+

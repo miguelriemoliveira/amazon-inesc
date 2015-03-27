@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+
+<arg name="view_ur5" default="0"/> 
+
+
+    <group unless="$(arg view_ur5)"> 
+        <node name="rviz" pkg="rviz" type="rviz" args="--display-config $(find amazon_object_segmentation)/config/amazon.rviz" required="true">
+        </node>
+    </group>
+
+    <group if="$(arg view_ur5)"> 
+        <node name="rviz" pkg="rviz" type="rviz" args="--display-config $(find amazon_object_segmentation)/config/ur5.rviz" required="true">
+        </node>
+    </group>
+
+
+</launch>

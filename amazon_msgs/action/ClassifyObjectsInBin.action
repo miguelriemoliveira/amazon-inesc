@@ -1,0 +1,12 @@
+#goal definition
+sensor_msgs/PointCloud2 point_cloud #point cloud 
+sensor_msgs/Image
+sensor_msgs/RegionOfInterest roi
+string items_in_bin[]
+string item_to_find
+---
+#result definition
+bool item_found
+
+---
+#feedback

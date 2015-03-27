@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!-- -->
+<launch>
+
+    <group ns="/shelf">
+        <rosparam command="load" file="$(find amazon_object_segmentation)/params/default.yaml" />
+    </group>
+
+    <node pkg="amazon_object_segmentation" type="segment_point_cloud_from_bin" name="segment_point_cloud_from_bin" output="screen">
+
+
+
+    <!--Must use ~ in remappings so they are private-->
+    <!--<remap from="~parent_frame_id" to="$(arg parent_frame_id)"/>-->
+
+    <!--param loading-->
+    <!--<param name="point_cloud_in_topic" value="$(arg point_cloud_in_topic)"/>-->
+    </node>
+
+    <!--<node pkg="amazon_object_segmentation" type="collect_pcd_and_tfs" name="collect_pcd_and_tfs" output="screen">-->
+    <!--</node>-->
+
+</launch>	

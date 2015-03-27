@@ -1,0 +1,12 @@
+#goal definition
+sensor_msgs/PointCloud2 point_cloud #point cloud 
+uint32 bin_number
+string camera_info_topic
+bool compute_roi
+---
+#result definition
+sensor_msgs/PointCloud2 segmented_point_cloud #point cloud 
+sensor_msgs/RegionOfInterest roi
+amazon_msgs/Point2DInteger convex_hull
+---
+#feedback
