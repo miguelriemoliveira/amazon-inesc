@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+
+<include file="$(find ur_bringup)/launch/ur5_bringup.launch">
+	<arg name="limited" value="true" />
+	<arg name="robot_ip" value="192.168.1.102"/>
+</include>
+
+<!-- CHECK if the lack of reverse port causes problems -->
+
+</launch>	
+
+
+
+
+
