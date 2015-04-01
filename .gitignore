@@ -66,5 +66,8 @@ ignore log files someone is creating
 #ignore ply files
 *.ply
 
+#ignore bag files
+*.bag
+
 # You should add here more stuff, for example people that use the kwrite or
 # gedit should ignore these programs backups. Miguel Oliveira

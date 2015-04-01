@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node pkg="amazon_object_segmentation" type="camera_to_robot_calibration" name="camera_to_robot_calibration" output="screen">
+        <rosparam command="load" file="$(find amazon_object_segmentation)/calibration/three_points.yaml" />
+    </node>
+
+</launch>	
+
+
+
+
+

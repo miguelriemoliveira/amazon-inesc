@@ -137,6 +137,16 @@ add_executable(test_segment_bin src/test_segment_bin.cpp)
 target_link_libraries (test_segment_bin ${PCL_LIBRARIES} ${catkin_LIBRARIES})
 add_dependencies(test_segment_bin ${catkin_EXPORTED_TARGETS})
 
+add_executable(test_octree src/test_octree.cpp)
+target_link_libraries (test_octree ${PCL_LIBRARIES} ${catkin_LIBRARIES})
+
+add_executable(camera_to_robot_calibration src/camera_to_robot_calibration.cpp)
+target_link_libraries (camera_to_robot_calibration ${PCL_LIBRARIES} ${catkin_LIBRARIES})
+
+    
+add_executable(robot_to_shelf_calibration_manual src/robot_to_shelf_calibration_manual.cpp)
+target_link_libraries (robot_to_shelf_calibration_manual ${PCL_LIBRARIES} ${catkin_LIBRARIES})
+
 #add_executable(compute_roi_from_point_cloud src/compute_roi_from_point_cloud.cpp)
 #target_link_libraries (compute_roi_from_point_cloud ${PCL_LIBRARIES} ${catkin_LIBRARIES})
 
