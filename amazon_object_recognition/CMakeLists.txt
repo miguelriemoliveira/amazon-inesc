@@ -104,6 +104,7 @@ include_directories(
 
 ## Declare a cpp executable
 # add_executable(amazon_object_recognition_node src/amazon_object_recognition_node.cpp)
+add_executable(as_object_recognition src/as_object_recognition.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
