@@ -1,8 +1,0 @@
-#goal definition
-sensor_msgs/PointCloud2 point_cloud #point cloud 
-sensor_msgs/Image
----
-#result definition
-sensor_msgs/RegionOfInterest roi
----
-#feedback
