@@ -7,8 +7,8 @@
     </group>
 
     <!--Launch the bin segmentation action server-->
-    <node pkg="amazon_object_segmentation" type="segment_point_cloud_from_bin" name="segment_point_cloud_from_bin" output="screen">
-    </node>
+    <!--<node pkg="amazon_object_segmentation" type="segment_point_cloud_from_bin" name="segment_point_cloud_from_bin" output="screen">-->
+    <!--</node>-->
 
     <!--Publish a static tf from the /ee_link to the /kinect_link-->
     <arg name="robot_camera_mount_link_frame_id" default="/ee_link"/>

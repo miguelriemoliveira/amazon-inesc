@@ -168,7 +168,6 @@ void keyboardEventOccurred (const pcl::visualization::KeyboardEvent &event, void
         ROS_ERROR("%s",ex.what());
     }
 
-
     ROS_INFO("Received transform ");
 
     t_world_to_shelf = t_camera_to_shelf.inverse() * transform_camera_to_world;

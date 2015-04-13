@@ -1,12 +1,9 @@
 #goal definition
 sensor_msgs/PointCloud2 point_cloud #point cloud 
-sensor_msgs/Image
-sensor_msgs/RegionOfInterest roi
-string items_in_bin[]
-string item_to_find
+string[] possible_objects
 ---
 #result definition
-bool item_found
+object_recognition_msgs/RecognizedObjectArray recognized_objects
 
 ---
 #feedback

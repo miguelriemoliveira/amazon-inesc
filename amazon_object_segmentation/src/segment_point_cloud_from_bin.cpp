@@ -20,7 +20,6 @@
 #include <cv_bridge/cv_bridge.h>
 #include <image_geometry/pinhole_camera_model.h>
 
-
 using namespace std;
 using namespace ros;
 using namespace ros::package;
@@ -346,8 +345,8 @@ int main (int argc, char** argv)
 
     for (size_t i=0; i<bin_label.size(); i++)
     {
-        ma.markers.push_back(create_bin_label(bin_label[i],"labels","shelf", bin_pose[2*i] + bin_size[0]/2,
-                    bin_pose[1 + 2*i] + bin_size[1]));
+        visualization_msgs::Marker m = create_bin_label(bin_label[i],"labels","shelf", bin_pose[2*i] + bin_size[0]/2,bin_pose[1 + 2*i] + bin_size[1]);
+        ma.markers.push_back(m);
         ma.markers.push_back(create_bin_cube("binA","shelf", bin_pose[2*i], bin_pose[1 + 2*i], bin_size));
     }
 
